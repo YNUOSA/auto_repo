@@ -17,3 +17,6 @@ tags
 
 ### python & virtualenv
 .venv
+
+### auto_repo ###
+_deploy_dir
