@@ -1,7 +1,7 @@
 static_http_server:
   image: nginx:1.11.5
   ports:
-    - "80:80/tcp"
+    - "8088:80/tcp"
   volumes:
     - .:/share
     - ./etc/nginx:/etc/nginx:ro
