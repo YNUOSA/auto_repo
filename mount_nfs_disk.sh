@@ -8,7 +8,7 @@ remote_nfs_disk_path=$(cat ./REMOTE_NFS_DISK_PATH)
 local_dir="$(cat ./NFS_LOCAL_DIR)"
 
 if [ -e $local_dir ];
-then:
+then
 	echo "local dir for nfs mounting is already exists"
 else
 	echo "local dir for nfs disk is not exists. creating..."
