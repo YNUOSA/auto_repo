@@ -29,3 +29,11 @@ start: init
 	# start static http server
 	cd $(core_static_http_server_dir); bash start.sh
 
+ubuntu_install:
+	# install nfs-common
+	sudo apt-get install -y nfs-common
+
+	# set docker faster repo
+	curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://db573425.m.daocloud.io
+	sudo service docker restart
+
