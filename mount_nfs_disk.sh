@@ -10,7 +10,7 @@ local_dir="$(cat ./NFS_LOCAL_DIR)"
 if [ -e $local_dir ];
 then:
 	echo "local dir for nfs mounting is already exists"
-else:
+else
 	echo "local dir for nfs disk is not exists. creating..."
 	sudo mkdir -p $local_dir
 	echo "local dir for nfs disk mouting created."
