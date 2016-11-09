@@ -1,2 +1,2 @@
 deepin_archive:
-  build: .
+  image: ubuntu:${TAG}
