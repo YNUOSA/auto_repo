@@ -21,6 +21,9 @@ clean:
 	# stop and clear static http server
 	cd $(core_static_http_server_dir); bash clean.sh
 
+	# stop and clear deepin_archive
+	cd $(repo_gears_dir)/deepin_archive; bash clean.sh
+
 	# umount nfs
 	bash umount_nfs_disk.sh
 
@@ -28,6 +31,11 @@ clean:
 start: init
 	# start static http server
 	cd $(core_static_http_server_dir); bash start.sh
+
+	#### start repo rsyncs ####
+
+	# start deepin_archive
+	cd $(repo_gears_dir)/deepin_archive; bash start.sh
 
 # only used for ubuntu 14.04
 ubuntu_install:

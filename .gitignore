@@ -20,3 +20,4 @@ tags
 
 ### auto_repo ###
 _deploy_dir
+static_http_server/html
