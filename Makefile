@@ -1,21 +1,33 @@
-deploy_dir="_deploy_dir"
 
-core_reverse_proxy_dir="core/reverse_proxy"
-core_static_http_server_dir="core/static_http_server"
+
+core_reverse_proxy_dir="core_gears/reverse_proxy"
+core_static_http_server_dir="core_gears/static_http_server"
+
+repo_gears_dir="repo_gears"
 
 all:
-		# Please use the tasks below:
-		# make start	: start static http server normally
-		# make start_reverse_proxy	: start reverse proxy
+	# Please use the tasks below:
+	# make start	: start static http server normally
+	# make start_reverse_proxy	: start reverse proxy
 
 init:
-	mkdir $(deploy_dir)
+	# mount nfs
+	cd $(repo_gears_dir); bash mount_nfs_disk.sh
+
+	# link static html dir
+	cd $(repo_gears_dir); bash link_static_html_dir.sh
 
 clean:
 	# stop and clear reverse proxy
 	cd $(core_reverse_proxy_dir); bash clean.sh
 
-	rm -rf $(deploy_dir)
+
+	# unlink static html dir
+	cd $(repo_gears_dir); bash unlink_static_html_dir.sh
+
+	# umount nfs
+	cd $(repo_gears_dir); bash umount_nfs_disk.sh
+
 
 start: clean init
 	# start static http server
