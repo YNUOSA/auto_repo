@@ -44,3 +44,7 @@ ubuntu_install:
 	curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://db573425.m.daocloud.io
 	sudo service docker restart
 
+	# pre-pull docker images
+	docker pull nginx:1.11.5
+	docker pull ynuosa2016/ubuntu:16.04
+
