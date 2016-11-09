@@ -21,6 +21,9 @@ clean:
 	# stop and clear reverse proxy
 	cd $(core_reverse_proxy_dir); bash clean.sh
 
+	# stop and clear static http server
+	cd $(core_static_http_server_dir); bash clean.sh
+
 
 	# unlink static html dir
 	cd $(repo_gears_dir); bash unlink_static_html_dir.sh
