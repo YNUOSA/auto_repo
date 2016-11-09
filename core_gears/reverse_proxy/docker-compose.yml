@@ -1,8 +1,0 @@
-reverse_proxy:
-  image: nginx:1.11.5
-  ports:
-    - "80:80/tcp"
-  volumes:
-    - .:/share
-    - ./etc/nginx:/etc/nginx:ro
-    - ./html:/usr/share/nginx/html:ro

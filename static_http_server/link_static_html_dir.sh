@@ -4,7 +4,7 @@
 # Created by thiswind on 2016/11/9.
 #
 
-local_dir="$(cat ../../NFS_LOCAL_DIR)"
+local_dir="$(cat ../NFS_LOCAL_DIR)"
 
 if ls -l ./html | grep $local_dir;
 then
