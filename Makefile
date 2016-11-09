@@ -14,8 +14,6 @@ init:
 	# mount nfs
 	cd $(repo_gears_dir); bash mount_nfs_disk.sh
 
-	# link static html dir
-	cd $(repo_gears_dir); bash link_static_html_dir.sh
 
 clean:
 	# stop and clear reverse proxy
@@ -23,10 +21,6 @@ clean:
 
 	# stop and clear static http server
 	cd $(core_static_http_server_dir); bash clean.sh
-
-
-	# unlink static html dir
-	cd $(repo_gears_dir); bash unlink_static_html_dir.sh
 
 	# umount nfs
 	cd $(repo_gears_dir); bash umount_nfs_disk.sh
