@@ -11,7 +11,8 @@ deepin_dir="$local_dir/deepin"
 
 mkdir -p $deepin_dir
 
-echo "deepin_dir=\"$deepin_dir\"" > .env
+# gen docker-compose.yml
+python gen_docker_compose.py > docker-compose.yml
 
 
 # start docker
