@@ -1,4 +1,4 @@
-FROM ynuosa2016/ubuntu:16.04
+FROM ubuntu:16.04
 RUN apt-get update
 RUN apt-get install -y apt-utils
 RUN apt-get install -y rsync
