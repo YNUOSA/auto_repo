@@ -1,4 +1,7 @@
 FROM ubuntu:16.04
+
+COPY ./sources.list.tuna /etc/apt/sources.list
+
 RUN apt-get update
 RUN apt-get install -y apt-utils
 RUN apt-get install -y rsync
