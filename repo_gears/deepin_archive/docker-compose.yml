@@ -1,5 +1,6 @@
 deepin_archive:
   build: .
   volumes:
-    - /private/repo_root_dir/deepin:/var/www/deepin:rw
+    - /private/repo_root_dir/deepin_release:/var/www/deepin:rw
   command: /do_rsync.sh
+  privileged: true
