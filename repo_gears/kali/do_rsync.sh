@@ -6,4 +6,4 @@
 
 #rsync -av --delete-after rsync.deepin.com::deepin/ /var/www/deepin/
 #rsync -v -r --delete-after rsync.deepin.com::releases/ /var/www/deepin/
-rsync -av --delete-after rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu/ /var/www/deepin/
+rsync -av --delete-after rsync://mirrors.tuna.tsinghua.edu.cn/kali/ /var/www/deepin

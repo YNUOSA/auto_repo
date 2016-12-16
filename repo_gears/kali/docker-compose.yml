@@ -1,6 +1,6 @@
 deepin_archive:
   build: .
   volumes:
-    - /private/repo_root_dir/deepin_archive:/var/www/deepin:rw
+    - /private/repo_root_dir/kali:/var/www/deepin:rw
   command: /do_rsync.sh
   privileged: true
