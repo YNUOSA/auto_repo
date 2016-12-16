@@ -7,7 +7,7 @@
 # re-fresh glboal value
 
 local_dir="$(cat ../NFS_LOCAL_DIR)"
-deepin_dir="$local_dir/deepin_archive"
+deepin_dir="$local_dir/ubuntu_archive"
 
 mkdir -p $deepin_dir
 

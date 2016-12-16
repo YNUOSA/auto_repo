@@ -35,8 +35,8 @@ start: init
 	#### start repo rsyncs ####
 
 	# start deepin_archive
-	cd $(repo_gears_dir)/deepin_archive; bash start.sh
-
+#	cd $(repo_gears_dir)/deepin_archive; bash start.sh
+	cd $(repo_gears_dir); bash start_all.sh
 # only used for ubuntu 14.04
 ubuntu_install:
 	# install nfs-common
