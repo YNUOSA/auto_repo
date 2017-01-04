@@ -1,0 +1,6 @@
+kali:
+  build: .
+  volumes:
+    - :/var/www/mirrors:rw
+  command: /do_rsync.sh
+  privileged: true

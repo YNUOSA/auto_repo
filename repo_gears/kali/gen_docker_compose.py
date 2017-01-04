@@ -7,7 +7,7 @@
 
 from jinja2 import Template
 
-f = open('../NFS_LOCAL_DIR')
+f = open('../../NFS_LOCAL_DIR')
 nfs_local_dir = f.read()
 f.close()
 
