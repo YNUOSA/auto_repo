@@ -1,9 +1,15 @@
-#!/bin/sh
-cd /home/strrl/auto_repo/repo_gears/deepin
-sh start.sh &
-cd /home/strrl/auto_repo/repo_gears/deepin_release
-sh start.sh &
-cd /home/strrl/auto_repo/repo_gears/kali
-sudo sh start.sh &
-cd /home/strrl/auto_repo/repo_gears/centos
-sudo sh start.sh &
+#!/usr/bin/env bash
+cd /home/strrl/project/auto_repo/repo_gears/centos
+bash start.sh &
+cd /home/strrl/project/auto_repo/repo_gears/deepin
+bash start.sh &
+cd /home/strrl/project/auto_repo/repo_gears/deepin-cd
+bash start.sh &
+cd /home/strrl/project/auto_repo/repo_gears/kali
+bash start.sh &
+cd /home/strrl/project/auto_repo/repo_gears/kali-images
+bash start.sh &
+cd /home/strrl/project/auto_repo/repo_gears/ubuntu
+bash start.sh &
+cd /home/strrl/project/auto_repo/repo_gears/ubuntu-cdimage
+bash start.sh &

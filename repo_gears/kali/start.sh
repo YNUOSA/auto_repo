@@ -1,12 +1,8 @@
 #!/usr/bin/env bash
 
-#
-# Created by thiswind on 2016/11/9.
-#
-
 # re-fresh glboal value
 
-local_dir="$(cat ../NFS_LOCAL_DIR)"
+local_dir="$(cat ../../NFS_LOCAL_DIR)"
 deepin_dir="$local_dir/kali"
 
 mkdir -p $deepin_dir
@@ -16,4 +12,4 @@ python gen_docker_compose.py > docker-compose.yml
 
 
 # start docker
-docker-compose build && docker-compose up -d 
+docker-compose build && docker-compose up -d

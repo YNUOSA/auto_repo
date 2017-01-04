@@ -7,14 +7,9 @@ path = os.path.dirname(os.path.dirname(os.getcwd()))
 mirror_dir = "{{ mirror_dir }}"
 
 
-# mirrorname = "testMirror"
-# mirrorlink = "rsync://testlink"
-
-
-
 def writefile(mirrorname, mirrorlink, start_all_file, clean_all_file):
     # make directory
-    mirrorconfpath = path + "/repo_gears_test/" + mirrorname
+    mirrorconfpath = path + "/repo_gears/" + mirrorname
     if not os.path.exists(mirrorconfpath):
         os.mkdir(mirrorconfpath)
 
@@ -55,13 +50,13 @@ def main():
     csvfile = open(os.getcwd() + "/mirrorlist.csv")
     csvreader = csv.reader(csvfile)
 
-    repopath = path + "/repo_gears_test"
+    repopath = path + "/repo_gears"
     if not os.path.exists(repopath):
         os.mkdir(repopath)
 
-    start_all_file = open(path + "/repo_gears_test/start_all.sh", 'w')
+    start_all_file = open(path + "/repo_gears/start_all.sh", 'w')
     start_all_file.write("#!/usr/bin/env bash" + "\n")
-    clean_all_file = open(path + "/repo_gears_test/clean_all.sh", 'w')
+    clean_all_file = open(path + "/repo_gears/clean_all.sh", 'w')
     clean_all_file.write("#!/usr/bin/env bash" + "\n")
 
     for line in csvreader:

@@ -19,7 +19,7 @@ sub_dir = sub_dir.strip()
 
 deepin_dir = '%s/%s' % (nfs_local_dir, sub_dir)
 
-template = Template(open('docker-compose.template.template.jinja2').read())
+template = Template(open('docker-compose.template.jinja2').read())
 script = template.render(deepin_dir=deepin_dir)
 
 print script

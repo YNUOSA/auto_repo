@@ -1,0 +1,6 @@
+deepin-cd:
+  build: .
+  volumes:
+    - {{ mirror_dir }}:/var/www/mirrors:rw
+  command: /do_rsync.sh
+  privileged: true
