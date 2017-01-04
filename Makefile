@@ -22,7 +22,8 @@ clean:
 	cd $(core_static_http_server_dir); bash clean.sh
 
 	# stop and clear deepin_archive
-	cd $(repo_gears_dir)/deepin_archive; bash clean.sh
+	#cd $(repo_gears_dir)/deepin_archive; bash clean.sh
+	cd $(repo_gears_dir); bash clean_all.sh
 
 	# umount nfs
 	bash umount_nfs_disk.sh
