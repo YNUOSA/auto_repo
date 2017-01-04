@@ -1,4 +1,4 @@
-!/bin/sh
+#!/bin/sh
 cd /home/strrl/auto_repo/repo_gears/deepin
 sh start.sh &
 cd /home/strrl/auto_repo/repo_gears/deepin_release
