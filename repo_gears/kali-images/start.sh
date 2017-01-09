@@ -7,6 +7,8 @@ deepin_dir="$local_dir/kali-images"
 
 mkdir -p $deepin_dir
 
+rm docker-compose.yml
+
 # gen docker-compose.yml
 python gen_docker_compose.py > docker-compose.yml
 
