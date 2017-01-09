@@ -21,6 +21,9 @@ clean:
 	# stop and clear static http server
 	cd $(core_static_http_server_dir); bash clean.sh
 
+	# stop and clear cadvisor
+	cd cadvisor; bash clean.sh
+
 	# stop and clear deepin_archive
 	#cd $(repo_gears_dir)/deepin_archive; bash clean.sh
 	cd $(repo_gears_dir); bash clean_all.sh
@@ -32,9 +35,12 @@ clean:
 start: init
 	# start static http server
 	cd $(core_static_http_server_dir); bash start.sh
+	
+	#start cadvisor
+	cd cadvisor;bash start.sh
 
 	#### start repo rsyncs ####
-
+	
 	# start deepin_archive
 #	cd $(repo_gears_dir)/deepin_archive; bash start.sh
 	cd $(repo_gears_dir); bash start_all.sh
