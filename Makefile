@@ -33,6 +33,10 @@ clean:
 
 
 start: init
+	# rebuild rsync script
+	cd build/mirror
+	python gen_mirror_conf.py
+	
 	# start static http server
 	cd $(core_static_http_server_dir); bash start.sh
 	
