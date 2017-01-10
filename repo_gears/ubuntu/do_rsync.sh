@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-rsync -av --delete-after rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu/ /var/www/mirrors
+rsync -av --delete-after rsync://archive.ubuntu.com/ubuntu/ /var/www/mirrors
