@@ -11,6 +11,5 @@ COPY rsync.sh /rsync.sh
 COPY SUB_DIR /SUB_DIR
 COPY LOG_FILE /LOG_FILE
 COPY JSON_FILE /JSON_FILE
-#COPY Json.py /Json.py
 RUN chmod a+x /do_rsync.sh
 RUN mkdir -p /var/www/mirrors/

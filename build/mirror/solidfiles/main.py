@@ -23,6 +23,7 @@ def main():
 def logg(name, errcode, errtext):
     f = open("LOG_FILE")
     s = f.read()
+    s = s.strip()
     f.close()
     f = open(s, "a")
     timeformat = '%Y-%m-%d %X'
@@ -34,6 +35,7 @@ def logg(name, errcode, errtext):
 def jsonlog(mirrorname, mirrorstat):
     f = open("JSON_FILE")
     s = f.read()
+    s = s.strip()
     f.close()
     f = open(s)
     job = json.load(f)

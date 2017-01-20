@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
-cd /home/strrl/project/auto_repo/repo_gears/centos
+cd /home/strrl/auto_repo/repo_gears/centos
 bash clean.sh &
-cd /home/strrl/project/auto_repo/repo_gears/deepin
+cd /home/strrl/auto_repo/repo_gears/deepin
 bash clean.sh &
-cd /home/strrl/project/auto_repo/repo_gears/deepin-cd
+cd /home/strrl/auto_repo/repo_gears/deepin-cd
 bash clean.sh &
-cd /home/strrl/project/auto_repo/repo_gears/kali
+cd /home/strrl/auto_repo/repo_gears/kali
 bash clean.sh &
-cd /home/strrl/project/auto_repo/repo_gears/kali-images
+cd /home/strrl/auto_repo/repo_gears/kali-images
 bash clean.sh &
-cd /home/strrl/project/auto_repo/repo_gears/ubuntu
+cd /home/strrl/auto_repo/repo_gears/ubuntu
 bash clean.sh &
-cd /home/strrl/project/auto_repo/repo_gears/ubuntu-cdimage
+cd /home/strrl/auto_repo/repo_gears/ubuntu-cdimage
 bash clean.sh &
