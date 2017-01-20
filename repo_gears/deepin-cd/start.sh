@@ -14,4 +14,4 @@ python gen_docker_compose.py > docker-compose.yml
 
 
 # start docker
-docker-compose build && docker-compose up -d
+docker-compose build && docker-compose up 

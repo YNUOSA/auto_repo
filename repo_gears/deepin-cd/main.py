@@ -7,7 +7,7 @@ def main():
     commands.getstatusoutput("python Json.py " + mirrorname + " syncing")
     logg(mirrorname, "", "syncing")
 
-    cmd = "bash ./do_rsync.sh"
+    cmd = "bash ./rsync.sh"
     status, output = commands.getstatusoutput(cmd)
     if (status == 0):
         commands.getstatusoutput("python Json.py " + mirrorname + " succeed")
