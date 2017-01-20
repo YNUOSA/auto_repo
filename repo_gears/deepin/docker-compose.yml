@@ -2,5 +2,6 @@ deepin:
   build: .
   volumes:
     - /private/repo_root_dir/deepin:/var/www/mirrors:rw
-  command: /do_rsync.sh
+    - /private/repo_root_dir/status:/var/www/stat:rw
+  command: python main.py
   privileged: true

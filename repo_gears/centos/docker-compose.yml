@@ -2,5 +2,6 @@ centos:
   build: .
   volumes:
     - /private/repo_root_dir/centos:/var/www/mirrors:rw
+    - /private/repo_root_dir/status:/var/www/stat:rw
   command: python main.py
   privileged: true

@@ -2,5 +2,6 @@ ubuntu-cdimage:
   build: .
   volumes:
     - /private/repo_root_dir/ubuntu-cdimage:/var/www/mirrors:rw
-  command: /do_rsync.sh
+    - /private/repo_root_dir/status:/var/www/stat:rw
+  command: python main.py
   privileged: true
