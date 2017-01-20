@@ -18,8 +18,9 @@ f.close()
 sub_dir = sub_dir.strip()
 
 mirror_dir = '%s/%s' % (nfs_local_dir, sub_dir)
+mirror_stat_dir = '%s/%s' % (nfs_local_dir, "status")
 
 template = Template(open('docker-compose.template.jinja2').read())
-script = template.render(mirror_dir=mirror_dir)
+script = template.render(mirror_dir=mirror_dir, mirror_stat_dir=mirror_stat_dir)
 
 print script

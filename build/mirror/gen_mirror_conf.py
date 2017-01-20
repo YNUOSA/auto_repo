@@ -5,6 +5,7 @@ import os, csv, shutil
 
 path = os.path.dirname(os.path.dirname(os.getcwd()))
 mirror_dir = "{{ mirror_dir }}"
+mirror_stat_dir = "{{ mirror_stat_dir }}"
 
 
 def writefile(mirrorname, mirrorlink, start_all_file, clean_all_file):
@@ -21,7 +22,7 @@ def writefile(mirrorname, mirrorlink, start_all_file, clean_all_file):
     # make docer-compose.template.jinja2
     f = open(mirrorconfpath + "/docker-compose.template.jinja2", 'w')
     template = Template(open('./template/docker-compose.template.template.jinja2').read())
-    script = template.render(mirrorname=mirrorname, mirror_dir=mirror_dir)
+    script = template.render(mirrorname=mirrorname, mirror_dir=mirror_dir, mirror_stat_dir=mirror_stat_dir)
     f.write(script)
     f.close()
     # make do_rsync.sh
