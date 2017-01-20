@@ -7,7 +7,7 @@ RUN apt-get update
 RUN apt-get install -y rsync
 COPY do_rsync.sh /do_rsync.sh
 COPY main.py /main.py
-COPY rsync.sh /rsync.sh
+#COPY rsync.sh /rsync.sh
 COPY SUB_DIR /SUB_DIR
 COPY LOG_FILE /LOG_FILE
 COPY JSON_FILE /JSON_FILE
