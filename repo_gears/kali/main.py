@@ -37,6 +37,9 @@ def jsonlog(mirrorname, mirrorstat):
     s = f.read()
     s = s.strip()
     f.close()
+    if (not os.path.exists(s)):
+        f = open(s, 'a')
+        f.close()
     f = open(s)
     job = json.load(f)
     f.close()
