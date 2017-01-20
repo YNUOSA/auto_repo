@@ -14,7 +14,8 @@ def writefile(mirrorname, mirrorlink, start_all_file, clean_all_file):
         os.mkdir(mirrorconfpath)
 
     # copy same files
-    filelists = ['clean.sh', 'Dockerfile', 'sources.list.tuna', 'gen_docker_compose.py']
+    filelists = ['clean.sh', 'Dockerfile', 'sources.list.tuna', 'gen_docker_compose.py', 'Json.py', 'main.py',
+                 'JSON_FILE', 'LOG_FILE']
     for line in filelists:
         shutil.copyfile('./solidfiles/' + line, mirrorconfpath + '/' + line)
     # make docer-compose.template.jinja2

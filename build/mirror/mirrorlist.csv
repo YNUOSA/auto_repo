@@ -3,5 +3,5 @@ deepin,292.82G,rsync://mirrors.tuna.tsinghua.edu.cn/deepin/
 deepin-cd,21.78G,rsync://mirrors.tuna.tsinghua.edu.cn/deepin-cd/
 kali,347.94G,rsync://mirrors.tuna.tsinghua.edu.cn/kali/
 kali-images,55.22G,rsync://mirrors.tuna.tsinghua.edu.cn/kali-images/
-ubuntu,1.10T,rsync://archive.ubuntu.com/ubuntu/
+ubuntu,1.10T,rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu/
 ubuntu-cdimage,553.27G,rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu-cdimage/

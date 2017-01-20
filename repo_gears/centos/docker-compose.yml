@@ -2,5 +2,5 @@ centos:
   build: .
   volumes:
     - /private/repo_root_dir/centos:/var/www/mirrors:rw
-  command: /do_rsync.sh
+  command: python main.py
   privileged: true
