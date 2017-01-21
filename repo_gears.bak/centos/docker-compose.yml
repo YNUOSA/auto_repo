@@ -1,6 +1,0 @@
-deepin_archive:
-  build: .
-  volumes:
-    - /private/repo_root_dir/centos:/var/www/deepin:rw
-  command: /do_rsync.sh
-  privileged: true
