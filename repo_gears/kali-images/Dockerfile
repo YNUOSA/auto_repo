@@ -11,5 +11,6 @@ COPY main.py /main.py
 COPY SUB_DIR /SUB_DIR
 COPY LOG_FILE /LOG_FILE
 COPY JSON_FILE /JSON_FILE
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN chmod a+x /do_rsync.sh
 RUN mkdir -p /var/www/mirrors/
