@@ -1,6 +1,6 @@
 
 
-core_static_http_server_dir="static_http_server"
+#core_static_http_server_dir="static_http_server"
 
 repo_gears_dir="repo_gears"
 
@@ -8,18 +8,14 @@ all:
 	# Please use the tasks below:
 	# make start	: start static http server normally
 	# make start_reverse_proxy	: start reverse proxy
-
 init:
 	# re-fresh global value
 	cp -f NFS_LOCAL_DIR $(repo_gears_dir)
-
 	# mount nfs
-	bash mount_nfs_disk.sh
-
-
+	#bash mount_nfs_disk.sh
 clean:
 	# stop and clear static http server
-	cd $(core_static_http_server_dir); bash clean.sh
+	#cd $(core_static_http_server_dir); bash clean.sh
 	
 	# stop and clear cadvisor
 	cd cadvisor; bash clean.sh
@@ -37,15 +33,14 @@ start: init
 	cd build/mirror; python gen_mirror_conf.py
 	
 	# start static http server
-	cd $(core_static_http_server_dir); bash start.sh
+	#cd $(core_static_http_server_dir); bash start.sh
 	
 	#start cadvisor
 	cd cadvisor;bash start.sh
 
 	#### start repo rsyncs ####
 	
-	# start deepin_archive
-#	cd $(repo_gears_dir)/deepin_archive; bash start.sh
+	# start all archive
 	cd $(repo_gears_dir); bash start_all.sh
 # only used for ubuntu 14.04
 ubuntu_install:

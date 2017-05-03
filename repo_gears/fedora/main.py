@@ -1,4 +1,5 @@
 import commands, os, time, json
+from time import sleep
 
 
 def main():
@@ -10,14 +11,24 @@ def main():
 
     cmd = "bash ./do_rsync.sh"
     status, output = commands.getstatusoutput(cmd)
+    count = 0
+    while (status != 0):
+        sleep(600)
+        jsonlog(mirrorname, "failed")
+        logg(mirrorname, status, "\n" + output)
+        status, output = commands.getstatusoutput(cmd)
+        count += 1
+        if count >= 10:
+            jsonlog(mirrorname, "failed")
+            return
     if (status == 0):
         # commands.getstatusoutput("python Json.py " + mirrorname + " succeed")
         jsonlog(mirrorname, "succeed")
         logg(mirrorname, "", "succeed")
-    else:
-        # commands.getstatusoutput("python Json.py " + mirrorname + " failed")
-        jsonlog(mirrorname, "failed")
-        logg(mirrorname, status, "\n" + output)
+        # else:
+        #     # commands.getstatusoutput("python Json.py " + mirrorname + " failed")
+        #     jsonlog(mirrorname, "failed")
+        #     logg(mirrorname, status, "\n" + output)
 
 
 def logg(name, errcode, errtext):
