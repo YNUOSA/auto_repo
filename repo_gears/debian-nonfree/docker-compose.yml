@@ -1,8 +1,0 @@
-debian-nonfree:
-  build: .
-  volumes:
-    - /private/repo_root_dir/debian-nonfree:/var/www/mirrors:rw
-    - /private/repo_root_dir/status:/var/www/stat:rw
-  command: python main.py
-  privileged: true
-  restart: on-failure

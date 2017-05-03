@@ -1,8 +1,0 @@
-kali-security:
-  build: .
-  volumes:
-    - {{ mirror_dir }}:/var/www/mirrors:rw
-    - {{ mirror_stat_dir }}:/var/www/stat:rw
-  command: python main.py
-  privileged: true
-  restart: on-failure
