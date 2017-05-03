@@ -6,4 +6,4 @@ static_http_server:
   volumes:
     - .:/share
     - ./etc/nginx:/etc/nginx:ro
-    - ./html:/usr/share/nginx/html:ro
+#    - ./html:/usr/share/nginx/html:ro
