@@ -1,35 +1,35 @@
 #!/usr/bin/env bash
-cd /home/strrl/project/auto_repo/repo_gears/centos
+cd /home/strrl/auto_repo/repo_gears/centos
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/debian
+cd /home/strrl/auto_repo/repo_gears/debian
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/debian-cd
+cd /home/strrl/auto_repo/repo_gears/debian-cd
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/debian-multimedia
+cd /home/strrl/auto_repo/repo_gears/debian-multimedia
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/debian-nonfree
+cd /home/strrl/auto_repo/repo_gears/debian-nonfree
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/debian-security
+cd /home/strrl/auto_repo/repo_gears/debian-security
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/deepin
+cd /home/strrl/auto_repo/repo_gears/deepin
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/deepin-cd
+cd /home/strrl/auto_repo/repo_gears/deepin-cd
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/docker
+cd /home/strrl/auto_repo/repo_gears/docker
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/fedora
+cd /home/strrl/auto_repo/repo_gears/fedora
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/kali
+cd /home/strrl/auto_repo/repo_gears/kali
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/kali-images
+cd /home/strrl/auto_repo/repo_gears/kali-images
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/kali-security
+cd /home/strrl/auto_repo/repo_gears/kali-security
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/raspbian
+cd /home/strrl/auto_repo/repo_gears/raspbian
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/steamos
+cd /home/strrl/auto_repo/repo_gears/steamos
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/ubuntu
+cd /home/strrl/auto_repo/repo_gears/ubuntu
 bash start.sh &
-cd /home/strrl/project/auto_repo/repo_gears/ubuntu-cdimage
+cd /home/strrl/auto_repo/repo_gears/ubuntu-cdimage
 bash start.sh &

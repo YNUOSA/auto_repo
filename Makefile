@@ -12,7 +12,7 @@ init:
 	# re-fresh global value
 	cp -f NFS_LOCAL_DIR $(repo_gears_dir)
 	# mount nfs
-	#bash mount_nfs_disk.sh
+	bash mount_nfs_disk.sh
 clean:
 	# stop and clear static http server
 	#cd $(core_static_http_server_dir); bash clean.sh

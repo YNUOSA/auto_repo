@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-rsync -av --delete-after rsync://mirrors.tuna.tsinghua.edu.cn/kali-images/ /var/www/mirrors
+rsync -av --delete-after rsync://ftp.nluug.nl/kali-images/ /var/www/mirrors

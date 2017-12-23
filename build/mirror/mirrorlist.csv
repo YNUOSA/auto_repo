@@ -8,10 +8,10 @@ deepin,292.82G,rsync://mirrors.tuna.tsinghua.edu.cn/deepin/
 deepin-cd,21.78G,rsync://mirrors.tuna.tsinghua.edu.cn/deepin-cd/
 docker,1.81G,rsync://mirrors.tuna.tsinghua.edu.cn/docker/
 fedora,1.26T,rsync://mirrors.tuna.tsinghua.edu.cn/fedora/
-kali,347.94G,rsync://mirrors.tuna.tsinghua.edu.cn/kali/
-kali-images,55.22G,rsync://mirrors.tuna.tsinghua.edu.cn/kali-images/
-kali-security,1.30K,rsync://mirrors.tuna.tsinghua.edu.cn/kali-security/
-raspbian,312.65G,rsync://mirrors.tuna.tsinghua.edu.cn/raspbian/
+kali,347.94G,rsync://ftp.nluug.nl/kali/
+kali-images,55.22G,rsync://ftp.nluug.nl/kali-images/
+kali-security,1.30K,rsync://ftp.nluug.nl/kali-security/
+raspbian,312.65G,rsync://archive.raspbian.org/archive/
 steamos,103.82G,rsync://mirrors.tuna.tsinghua.edu.cn/steamos/
-ubuntu,1.10T,rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu/
-ubuntu-cdimage,553.27G,rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu-cdimage/
+ubuntu,1.10T,rsync://archive.ubuntu.com/ubuntu/
+ubuntu-cdimage,553.27G,rsync://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases
