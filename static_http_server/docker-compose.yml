@@ -7,3 +7,4 @@ static_http_server:
     - .:/share
     - ./etc/nginx:/etc/nginx:ro
     - ./html:/usr/share/nginx/html:ro
+    - ./certs:/usr/share/certs
