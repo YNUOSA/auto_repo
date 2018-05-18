@@ -1,3 +1,7 @@
+arch4edu,3.21G,rsync://mirrors.tuna.tsinghua.edu.cn/arch4edu/
+archlinux,62.87G,rsync://mirrors.tuna.tsinghua.edu.cn/archlinux/
+archlinuxarm,75.34G,rsync://mirrors.tuna.tsinghua.edu.cn/archlinuxarm/
+archlinuxcn,24.72G,rsync://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/
 centos,169.23G,rsync://mirrors.tuna.tsinghua.edu.cn/centos/
 debian,1.32T,rsync://mirrors.tuna.tsinghua.edu.cn/debian/
 debian-cd,216.40G,rsync://mirrors.tuna.tsinghua.edu.cn/debian-cd/
