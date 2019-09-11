@@ -19,10 +19,12 @@ pip install --upgrade pip
 
 echo "install docker"
 apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+# Ubuntu 16.04
 echo "deb https://mirrors.tuna.tsinghua.edu.cn/docker/apt/repo ubuntu-xenial main" | sudo tee /etc/apt/sources.list.d/docker.list
 apt-get update
 apt-get install docker-engine
 
+# TODO: Daocloud should be deprecated. Due to its slow network.
 curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://db573425.m.daocloud.io
 
 sleep 2
