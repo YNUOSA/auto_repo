@@ -1,9 +1,7 @@
-# Auto_repo
+# auto repo
 
-[YNUOSA镜像站](http://mirrors.ynuosa.org)
+[YNUOSA 镜像站](http://mirrors.ynu.edu.cn)
 
 自动更新程序
 
-主要程序代码在 mirrorsall 分支中
-
-框架@thiswind
+框架 @thiswind
